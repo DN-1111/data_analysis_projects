@@ -113,7 +113,7 @@ A time-series chart showing sales patterns across months.
 
 ## Dashboard Preview
 
-![Dashboard Screenshot](images/inventory_imbalance_and_demand_analysis_.png)
+![Dashboard Screenshot](images/inventory_imbalance_and_demand_analysis.png)
 
 ---
 
