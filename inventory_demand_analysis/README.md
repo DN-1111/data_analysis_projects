@@ -118,9 +118,9 @@ A time-series chart showing sales patterns across months.
 ---
 ## Document order
 
-01-data.md
-02-notebooks.md
-03-tableau.md
-04-images.md
+1. data.md
+2. notebooks.md
+3. tableau.md
+4. images.md
 
 
