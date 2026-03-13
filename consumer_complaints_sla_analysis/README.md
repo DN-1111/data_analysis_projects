@@ -143,10 +143,21 @@ ___
 
 ## Repository Structure
 
--├── data
--├── sql
--├── tableau
--├── images
--└── README.md
+consumer_complaints_sla_analysis/
+│
+├── data/
+│ └── consumer_complaints_raw.csv
+│ |__ consumer_complainta_cleaned.csv
+|
+├── sql/
+│ └── sla_operations_analysis.sql
+│
+├── tableau/
+│ └── sla_dashboard.twbx
+│
+├── images/
+│ └── SLA_breach_risk_analysis_dashboard.png
+│
+└── README.md
 
 
