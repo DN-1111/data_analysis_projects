@@ -1,22 +1,33 @@
 # Inventory Imbalance & Demand Analysis
 
-## Project Overview
-This project analyzes retail sales data to identify **inventory imbalance issues**, where some products are overstocked while others face potential stock-outs. The goal is to understand product demand, store performance, and sales trends to support **better inventory planning decisions**.
+## Executive Summary
+This project analyzes retail sales data to identify **inventory imbalance risks**, including products that may experience stock-outs due to high demand and products that may remain overstocked due to slower sales.
 
-The project combines **Python for data preparation** and **Tableau for visualization**, resulting in an interactive dashboard that highlights demand patterns and inventory risks.
+Using **Python for data preparation and transformation** and **Tableau for visualization**, the analysis highlights product demand patterns, store-level performance differences, and sales trends over time. These insights help businesses make **data-driven decisions about inventory allocation and replenishment strategies**.
+
+---
+
+## Project Overview
+This project analyzes **retail transaction data across multiple stores and products** to understand demand patterns and sales performance. The goal is to understand product demand, store performance, and sales trends to support **better inventory planning decisions**.
 
 ---
 
 ## Business Problem
 
-Retail businesses often struggle with **inventory imbalance**:
+Retail businesses often face **inventory imbalance challenges**:
 
-- Some products sell quickly and risk **stock-outs**, leading to lost sales.
-- Other products move slowly and lead to **excess inventory costs**.
-- Demand may vary across **different store locations**.
-- Sales may also fluctuate **over time**.
+- Some products sell quickly and risk **stock-outs**
+- Other products move slowly and create **excess inventory**
 
-Understanding these patterns helps businesses improve **inventory allocation and replenishment strategies**.
+In addition, **demand patterns vary across store locations and time periods**, making it difficult to distribute inventory efficiently.
+
+Leadership needs insights into:
+
+- Which products drive the most revenue
+- Which stores generate the highest sales
+- How demand fluctuates over time
+
+These insights enable **better inventory planning, replenishment, and demand forecasting**.
 
 ---
 
@@ -32,17 +43,53 @@ The main objectives of this project are:
 
 ---
 
+# Dataset
+
+**Source:** Maven Analytics – Retail Toy Sales Dataset
+
+The dataset contains **retail sales transactions across multiple stores and products**, including information about products, store locations, and sales activity.
+
+## Key Fields
+
+- **Sale ID** – Unique identifier for each transaction  
+- **Date** – Transaction date  
+- **Store ID** – Store where the sale occurred  
+- **Product ID** – Product sold  
+- **Units** – Number of units sold  
+- **Product Name** – Product name  
+- **Product Category** – Product classification  
+- **Product Price** – Retail price  
+- **Store Name** – Store location  
+
+## Dataset Size
+
+- **Total transactions:** ~7,000+
+- **Products:** 35
+- **Stores:** 50
+
+___
+
+
 ## Tools & Technologies
 
-- **Python**
-  - Pandas
-  - NumPy
+## Python (Pandas, NumPy)
 
-- **Tableau**
-  - Data visualization
-  - Interactive dashboard development
+- Data cleaning and validation
+- Dataset merging and transformation
+- Feature engineering
+- Revenue calculation and aggregation
+- Creation of analytical datasets
+
+## Tableau
+
+- Data visualization
+- Interactive dashboard development
+- Demand pattern exploration
+- Business insight generation
 
 ---
+
+## Project Workflow
 
 ## Data Preparation (Python)
 
@@ -66,54 +113,114 @@ Generated datasets:
 
 These datasets were exported and used in Tableau.
 
+##  Visualization (Tableau)
+
+- Built an **interactive dashboard** to analyze demand patterns
+- Designed visualizations to highlight **inventory imbalance risks**
+- Created charts for **product performance, store comparison, and sales trends**
+
+---
+
+# Skills Demonstrated
+
+- Data Cleaning and Preparation
+- Python Data Transformation (Pandas)
+- Feature Engineering
+- Demand Pattern Analysis
+- Data Visualization
+- Business Insight Generation
+
 ---
 
 ## Dashboard Overview
 
-The Tableau dashboard contains five main analytical components.
+The dashboard provides a **decision-focused view of product demand and store performance.**
 
-### 1. KPI Summary
-Provides an overview of:
-- Total Revenue
-- Total Units Sold
-- Number of Products
-- Number of Stores
+It includes:
 
-### 2. Top Revenue-Driving Products
-A bar chart identifying products contributing most to revenue, helping detect fast-moving and slow-moving products.
+- Overall sales KPIs
+- Product-level revenue analysis
+- Store performance comparison
+- Product demand distribution across stores
+- Monthly sales trend analysis
 
-### 3. Product Demand by Store
-A heat map showing product demand across different stores using units sold.
+## Dashboard Preview
 
-### 4. Store Performance
-A bar chart ranking stores based on revenue to identify high-performing locations.
-
-### 5. Monthly Sales Trend
-A time-series chart showing sales patterns across months.
+![Dashboard Screenshot](images/inventory_imbalance_and_demand_analysis.png)
 
 ---
 
 ## Key Insights
 
-- A small number of products generate a large portion of revenue.
-- Product demand varies significantly across stores.
-- Some products show slow movement, indicating potential overstock risk.
-- Sales fluctuate over time, suggesting seasonal demand patterns.
+- **Revenue is highly concentrated in a small number of products.**  
+  Product performance analysis shows that items such as **:contentReference[oaicite:0]{index=0}** generate the largest share of revenue (~$2.39M). This indicates that a relatively small subset of products drives a significant portion of overall sales, increasing the risk of stock-outs if these high-demand products are not adequately replenished.
 
----
+- **Demand varies significantly across store locations.**  
+  The product-by-store heat map reveals that performance is not uniform across all stores. Certain products perform exceptionally well in specific locations while showing lower demand in others. This suggests that customer preferences vary geographically, making uniform inventory distribution inefficient.
 
-## Business Recommendations
+- **A small number of stores generate a disproportionately large share of revenue.**  
+  Store performance analysis indicates that top-performing stores such as **:contentReference[oaicite:1]{index=1}** generate the highest revenue, significantly outperforming other locations. High-impact stores contribute a large portion of overall sales and require consistent product availability to avoid revenue loss.
 
-- Prioritize replenishment of **high-demand products**.
-- Review slow-moving products for potential promotions or reduced stock.
-- Allocate inventory **based on store-level demand patterns**.
-- Use historical sales trends to improve **demand forecasting**.
+- **Sales trends show noticeable fluctuations throughout the year.**  
+  Monthly sales trend analysis indicates that demand peaks between March and July (~110K units sold) and drops around October (~48K units sold), suggesting seasonal demand patterns that should be considered when planning inventory levels.
 
----
+- **Operational risk exists due to demand concentration and uneven distribution.**  
+  The combination of high-demand products, location-specific demand patterns, and seasonal fluctuations creates potential inventory imbalance risks, where businesses may simultaneously face stock-outs for high-demand products and excess inventory for slower-moving items.
 
-## Dashboard Preview
+___
 
-![Dashboard Screenshot](images/inventory_imbalance_and_demand_analysis.png)
+## Recommendations 
+
+- **Prioritize replenishment for high-demand products.**  
+  Products that contribute the largest share of revenue should be monitored closely and replenished frequently to prevent stock-outs and lost sales.
+
+- **Implement demand-driven inventory allocation across stores.**  
+  Allocate inventory based on store-specific demand patterns rather than distributing evenly across all locations. This ensures high-demand stores receive sufficient stock while minimizing overstock in low-demand stores.
+
+- **Monitor slow-moving products and optimize stock levels.**  
+  Evaluate lower-volume products regularly to avoid excessive inventory holding costs. Consider promotions, discounts, or reduced reorder quantities to improve turnover.
+
+- **Incorporate seasonal demand patterns into inventory planning.**  
+  Use historical monthly sales trends to forecast future demand and adjust inventory levels during peak and low-demand periods.
+
+- **Prioritize inventory availability in high-performing stores.**  
+  Stores generating the highest revenue should receive priority in allocation, as stock-outs in these locations would have the greatest financial impact.
+
+- **Overall Business Value:**  
+  This analysis provides insights that can help businesses improve inventory allocation efficiency, reduce stock-out risk, and minimize excess inventory holding costs.
+  By identifying high-demand products, location-specific demand patterns, and seasonal fluctuations, the business can **reduce stock-out risk, minimize excess inventory costs, and improve revenue stability** through better inventory allocation strategies.
+
+___
+
+# Repository Structure
+
+```
+inventory_imbalance_demand_analysis/
+│
+├── data/
+│   ├── raw/
+│   │   ├── products.csv
+│   │   ├── sales.csv
+│   │   ├── stores.csv
+│   │   └── calendar.csv
+│   │
+│   └── processed/
+│       ├── product_performance.csv
+│       ├── store_performance.csv
+│       ├── product_store_demand.csv
+│       └── monthly_sales_trend.csv
+│
+├── notebooks/
+│   └── inventory_analysis.ipynb
+│
+├── tableau/
+│   └── inventory_dashboard.twbx
+│
+├── images/
+│   └── inventory_dashboard.png
+│
+└── README.md
+```
 
 ---
 
