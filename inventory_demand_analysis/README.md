@@ -198,26 +198,26 @@ ___
 inventory_imbalance_demand_analysis/
 │
 ├── data/
-│   ├── raw/
+│   ├── raw_data/
 │   │   ├── products.csv
 │   │   ├── sales.csv
 │   │   ├── stores.csv
 │   │   └── calendar.csv
 │   │
-│   └── processed/
+│   └── processed_data/
 │       ├── product_performance.csv
 │       ├── store_performance.csv
 │       ├── product_store_demand.csv
 │       └── monthly_sales_trend.csv
 │
 ├── notebooks/
-│   └── inventory_analysis.ipynb
+│   └── inventory_supply_chain_analysis.ipynb
 │
 ├── tableau/
-│   └── inventory_dashboard.twbx
+│   └── inventory imbalance and demand analysis dashboard.twbx
 │
 ├── images/
-│   └── inventory_dashboard.png
+│   └── inventory_imbalance_and_demand_analysis_.png
 │
 └── README.md
 ```
