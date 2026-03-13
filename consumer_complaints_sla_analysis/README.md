@@ -143,10 +143,10 @@ ___
 
 ## Repository Structure
 
-├── data
-├── sql
-├── tableau
-├── images
-└── README.md
+-├── data
+-├── sql
+-├── tableau
+-├── images
+-└── README.md
 
 
