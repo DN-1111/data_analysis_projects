@@ -3,7 +3,7 @@
 
 This project analyzes enterprise energy consumption across multiple buildings to identify operational inefficiencies and opportunities to reduce carbon emissions.
 
-Using Python, SQ and Tableau, the project explores energy usage patterns, occupancy behavior, and hourly load trends to provide actionable sustainability insights.
+Using Python, SQ and Tableau, the project explores energy usage patterns, occupancy behavior and hourly load trends to provide actionable sustainability insights.
 
 The final deliverable is an interactive dashboard that helps decision-makers understand energy consumption patterns and prioritize carbon reduction strategies.
 
