@@ -7,16 +7,7 @@ Using Python, SQL, and Tableau, the project explores energy usage patterns, occu
 
 The final deliverable is an interactive dashboard that helps decision-makers understand energy consumption patterns and prioritize carbon reduction strategies.
 
-## Dashboard Preview
-
-### Executive Overview
-![Executive Overview](images/executive_sustainability_overview.png)
-
-### Operational Efficiency Analysis
-![Operational Analysis](images/operational_analysis.png)
-
-### Decarbonization Strategy
-![Decarbonization Strategy](images/decarbonization_strategy.png)
+___
 
 ## Business Problem
 
@@ -31,6 +22,8 @@ Key questions the organization needs to answer include:
 
 Without answering these questions, organizations may face increasing energy costs and difficulty meeting sustainability or ESG goals.
 
+___
+
 ## Project Objective
 
 The objective of this project is to analyze enterprise energy consumption data and identify opportunities to improve operational efficiency and reduce carbon emissions.
@@ -44,6 +37,8 @@ The analysis focuses on:
 - Highlighting buildings with the highest potential for carbon reduction
 
 The final outcome is an interactive Tableau dashboard that provides actionable insights for energy optimization and sustainability decision-making.
+
+___
 
 ## Dataset Description
 
@@ -77,6 +72,20 @@ Additional analytical features were created during the data preparation stage:
 | Is_Weekend | Indicator for weekend vs weekday |
 | Carbon_Emission_kg | Estimated carbon emissions from electricity usage |
 | Adjusted_Carbon_kg | Carbon emissions after renewable energy simulation |
+
+___
+
+## Tools & Technologies
+
+The following tools and technologies were used throughout the project:
+
+- **Python (Pandas, NumPy)** – Data cleaning, exploration, and feature engineering
+- **SQL (MySQL)** – Data aggregation and analytical queries
+- **Tableau** – Interactive dashboard development and visualization
+- **Jupyter Notebook** – Data analysis and documentation
+- **GitHub** – Project version control and documentation
+
+___
 
 ## Project Workflow
 
@@ -124,6 +133,21 @@ The dashboard is organized into three sections:
 
 The dashboard enables stakeholders to explore energy usage patterns and prioritize sustainability initiatives.
 
+___
+
+## Dashboard Preview
+
+### Executive Overview
+![Executive Overview](images/executive_sustainability_overview.png)
+
+### Operational Efficiency Analysis
+![Operational Analysis](images/operational_analysis.png)
+
+### Decarbonization Strategy
+![Decarbonization Strategy](images/decarbonization_strategy.png)
+
+___
+
 ## Key Insights
 
 The analysis revealed several important patterns in energy consumption and carbon emissions across the organization.
@@ -141,7 +165,10 @@ Hourly load analysis revealed that peak energy demand occurs during evening hour
 Simulation of renewable energy adoption shows that the organization could potentially reduce total carbon emissions by approximately 20 percent.
 
 ### 5. Carbon Reduction Potential Varies Across Buildings
-Some buildings contribute significantly more to carbon emissions than others. Prioritizing renewable energy implementation in these high-impact facilities would maximize emission reduction.
+Some buildings contribute significantly more to carbon emissions than others. Prioritizing renewable energy implementation in these high-impact facilities would 
+maximize emission reduction.
+
+___
 
 ## Recommendations
 
@@ -163,24 +190,30 @@ Based on the insights from the analysis, several actions can help improve energy
 
    Implementing real-time energy monitoring dashboards can help facility managers track energy consumption and identify inefficiencies early.
 
+___
+
 ## Business Impact
 
-If implemented, these recommendations could provide several benefits:
+## Business Impact
 
-- Reduction of carbon emissions through renewable energy adoption
-- Improved operational energy efficiency across facilities
-- Better identification of high-impact buildings for sustainability initiatives
-- Data-driven decision-making for energy management and ESG reporting   
+If implemented, the insights from this analysis could deliver measurable sustainability and operational benefits:
 
-## Tools & Technologies
+- **~20% reduction in carbon emissions**  
+  Renewable energy adoption could reduce total emissions from **950 tCO₂ to approximately 760 tCO₂**, resulting in a potential reduction of **~190 tCO₂** over the analyzed period.
 
-The following tools and technologies were used throughout the project:
+- **Targeted optimization of high-impact facilities**  
+  The analysis identified the **top energy-consuming buildings (e.g., B014, B008, B002)**, each exceeding **100,000 kWh** of energy usage. Prioritizing efficiency improvements or renewable deployment in these facilities could generate the greatest emission reduction impact.
 
-- **Python (Pandas, NumPy)** – Data cleaning, exploration, and feature engineering
-- **SQL (MySQL)** – Data aggregation and analytical queries
-- **Tableau** – Interactive dashboard development and visualization
-- **Jupyter Notebook** – Data analysis and documentation
-- **GitHub** – Project version control and documentation
+- **Improved operational energy efficiency**  
+  Energy consumption remained nearly **evenly distributed across occupancy levels (~33% each)**, indicating potential base-load inefficiencies. Addressing these inefficiencies through automation and optimized building management systems could reduce unnecessary energy consumption.
+
+- **Better demand management strategies**  
+  Hourly load analysis revealed **evening peak demand between 20:00–22:00**, enabling organizations to evaluate **energy storage or demand-shifting strategies** to manage peak electricity usage more effectively.
+
+- **Data-driven sustainability planning**  
+  The integrated dashboard enables leadership to monitor energy consumption, benchmark facilities, and evaluate decarbonization scenarios, supporting **data-driven energy management and ESG reporting**.
+
+___
 
 ## Conclusion
 
@@ -190,8 +223,11 @@ By combining Python for data preparation, SQL for analytical querying, and Table
 
 The dashboard helps identify high-consumption buildings, understand peak demand behavior, and evaluate the potential impact of renewable energy adoption. These insights can support organizations in improving energy efficiency and progressing toward carbon reduction goals.
 
+___
+
 ## Repository Structure
 
+```
 energy-carbon-optimization-dashboard
 │
 ├── data  
@@ -213,6 +249,6 @@ energy-carbon-optimization-dashboard
 │   └── decarbonization_strategy.png  
 │
 ├── README.md  
-
+```
 
 
