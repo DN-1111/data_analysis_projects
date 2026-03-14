@@ -3,12 +3,12 @@
 ## Executive Summary
 This project analyzes retail sales data to identify **inventory imbalance risks**, including products that may experience stock-outs due to high demand and products that may remain overstocked due to slower sales.
 
-Using **Python for data preparation and transformation** and **Tableau for visualization**, the analysis highlights product demand patterns, store-level performance differences, and sales trends over time. These insights help businesses make **data-driven decisions about inventory allocation and replenishment strategies**.
+Using **Python for data preparation and transformation** and **Tableau for visualization**, the analysis highlights product demand patterns, store-level performance differences and sales trends over time. These insights help businesses make **data-driven decisions about inventory allocation and replenishment strategies**.
 
 ---
 
 ## Project Overview
-This project analyzes **retail transaction data across multiple stores and products** to understand demand patterns and sales performance. The goal is to understand product demand, store performance, and sales trends to support **better inventory planning decisions**.
+This project analyzes **retail transaction data across multiple stores and products** to understand demand patterns and sales performance. The goal is to understand product demand, store performance and sales trends to support **better inventory planning decisions**.
 
 ---
 
@@ -27,7 +27,7 @@ Leadership needs insights into:
 - Which stores generate the highest sales
 - How demand fluctuates over time
 
-These insights enable **better inventory planning, replenishment, and demand forecasting**.
+These insights enable **better inventory planning, replenishment and demand forecasting**.
 
 ---
 
@@ -47,7 +47,7 @@ The main objectives of this project are:
 
 **Source:** Maven Analytics – Retail Toy Sales Dataset
 
-The dataset contains **retail sales transactions across multiple stores and products**, including information about products, store locations, and sales activity.
+The dataset contains **retail sales transactions across multiple stores and products**, including information about products, store locations and sales activity.
 
 ## Key Fields
 
@@ -117,7 +117,7 @@ These datasets were exported and used in Tableau.
 
 - Built an **interactive dashboard** to analyze demand patterns
 - Designed visualizations to highlight **inventory imbalance risks**
-- Created charts for **product performance, store comparison, and sales trends**
+- Created charts for **product performance, store comparison and sales trends**
 
 ---
 
@@ -165,7 +165,7 @@ It includes:
   Monthly sales trend analysis indicates that demand peaks between March and July (~110K units sold) and drops around October (~48K units sold), suggesting seasonal demand patterns that should be considered when planning inventory levels.
 
 - **Operational risk exists due to demand concentration and uneven distribution.**  
-  The combination of high-demand products, location-specific demand patterns, and seasonal fluctuations creates potential inventory imbalance risks, where businesses may simultaneously face stock-outs for high-demand products and excess inventory for slower-moving items.
+  The combination of high-demand products, location-specific demand patterns and seasonal fluctuations creates potential inventory imbalance risks, where businesses may simultaneously face stock-outs for high-demand products and excess inventory for slower-moving items.
 
 ___
 
@@ -178,7 +178,7 @@ ___
   Allocate inventory based on store-specific demand patterns rather than distributing evenly across all locations. This ensures high-demand stores receive sufficient stock while minimizing overstock in low-demand stores.
 
 - **Monitor slow-moving products and optimize stock levels.**  
-  Evaluate lower-volume products regularly to avoid excessive inventory holding costs. Consider promotions, discounts, or reduced reorder quantities to improve turnover.
+  Evaluate lower-volume products regularly to avoid excessive inventory holding costs. Consider promotions, discounts or reduced reorder quantities to improve turnover.
 
 - **Incorporate seasonal demand patterns into inventory planning.**  
   Use historical monthly sales trends to forecast future demand and adjust inventory levels during peak and low-demand periods.
@@ -187,8 +187,8 @@ ___
   Stores generating the highest revenue should receive priority in allocation, as stock-outs in these locations would have the greatest financial impact.
 
 - **Overall Business Value:**  
-  This analysis provides insights that can help businesses improve inventory allocation efficiency, reduce stock-out risk, and minimize excess inventory holding costs.
-  By identifying high-demand products, location-specific demand patterns, and seasonal fluctuations, the business can **reduce stock-out risk, minimize excess inventory costs, and improve revenue stability** through better inventory allocation strategies.
+  This analysis provides insights that can help businesses improve inventory allocation efficiency, reduce stock-out risk and minimize excess inventory holding costs.
+  By identifying high-demand products, location-specific demand patterns and seasonal fluctuations, the business can **reduce stock-out risk, minimize excess inventory costs and improve revenue stability** through better inventory allocation strategies.
 
 ___
 
